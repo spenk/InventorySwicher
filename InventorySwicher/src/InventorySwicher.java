@@ -14,6 +14,8 @@ public class InventorySwicher extends Plugin{
 	    log.info(this.name + " version " + this.version + " by " + this.author + " is initialized!");
 	    etc.getLoader().addListener(PluginLoader.Hook.TELEPORT, listener, this, PluginListener.Priority.MEDIUM);
 	    etc.getLoader().addListener(PluginLoader.Hook.LOGIN, listener, this, PluginListener.Priority.MEDIUM);
+	    etc.getLoader().addListener(PluginLoader.Hook.PLAYER_MOVE, listener, this, PluginListener.Priority.MEDIUM);
+	    etc.getLoader().addListener(PluginLoader.Hook.COMMAND, listener, this, PluginListener.Priority.MEDIUM);
 
 	    File f1 = new File("plugins/config");
 	    f1.mkdir();
